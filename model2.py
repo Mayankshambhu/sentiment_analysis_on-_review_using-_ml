@@ -266,8 +266,8 @@ def main():
     logger.info(f'Test F1 Score: {test_f1:.4f}')
 
     # Save the final model and tokenizer
-    torch.save(model.state_dict(), f'final_model_{timestamp}.pth')
-    tokenizer.save_pretrained(f'tokenizer_{timestamp}')
+    torch.save(model.state_dict(), f'sentiment_model_{timestamp}.pth')
+    tokenizer.save_pretrained(f'sentiment_tokenizer_{timestamp}')
 
 if __name__ == "__main__":
     main()
